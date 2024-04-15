@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class SampleThree {
-  public static void main(String[] args) {
 
+  public static void main(String[] args) {
     char operator;
     Double number1, number2, result;
 
