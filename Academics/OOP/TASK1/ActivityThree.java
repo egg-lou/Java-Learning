@@ -1,14 +1,13 @@
 package Academics.OOP.TASK1;
-import java.util.InputMismatchException;
-import java.util.Scanner;
+import java.util.*;
 
 public class ActivityThree {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         try {            
-            System.out.println("Input the lenght of the rectangle: ");
+            System.out.print("Input the lenght of the rectangle: ");
             double length = scanner.nextDouble();
-            System.out.println("Input the width of the rectangle: ");
+            System.out.print("Input the width of the rectangle: ");
             double width = scanner.nextDouble();
             
             double perimeter = perimeter(length, width);
