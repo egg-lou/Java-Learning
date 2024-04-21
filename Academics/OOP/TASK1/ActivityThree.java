@@ -3,9 +3,8 @@ import java.util.*;
 
 public class ActivityThree {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        try {            
-            System.out.print("Input the lenght of the rectangle: ");
+        try (Scanner scanner = new Scanner(System.in)){            
+            System.out.print("Input the length of the rectangle: ");
             double length = scanner.nextDouble();
             System.out.print("Input the width of the rectangle: ");
             double width = scanner.nextDouble();
@@ -17,13 +16,10 @@ public class ActivityThree {
             System.out.println("The perimeter of the rectangle is: " + perimeter);
         } catch (InputMismatchException e) {
             System.out.println("Invalid input, please enter a number");
-        } finally {
-            System.out.println("Thank you for using the program");   
-            scanner.close();
         }
     }    
 
-    public static double perimeter(double length, double width) {
+    private static double perimeter(double length, double width) {
         return 2 * (length + width);
     }
 }

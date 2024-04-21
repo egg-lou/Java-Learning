@@ -1,5 +1,4 @@
 package Academics.OOP.TASK1;
-
 public class ActivityOne {
     public static void main(String[] args) {
         String firstName = "Alenere";
@@ -7,9 +6,13 @@ public class ActivityOne {
         String gender = "she";
         String drink = "coffee";
 
-        String message = firstName + ", the friendly neighbor, waved at " + secondName + " as " + gender + " walked by " + secondName + "'s house. " + secondName + " smiled back and invited " + firstName + " in for a cup of " + drink;
+        StringBuilder message = new StringBuilder();
+        message.append(firstName).append(", the friendly neighbor, waved at ")
+               .append(secondName).append(" as ").append(gender)
+               .append(" walked by \n").append(secondName).append("'s house. ")
+               .append(secondName).append(" smiled back and invited ")
+               .append(firstName).append(" in for a\ncup of ").append(drink).append(".");
 
-        System.out.println(message);
+        System.out.println(message.toString());
     }
-    
 }
