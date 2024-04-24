@@ -2,23 +2,15 @@ import java.util.*;
 
 public class SampleEight {
     public static void main(String[] args) {
-        // Custom input string
-        String s = "I Know YOI Bui You Don't Know ME"; // string variable value
+        String s = "I Know YOI Bui You Don't Know ME";
  
-        // Locales with the language "tr" for TURKISH
-        //"en" for ENGLISH is created
-        Locale TURKISH = Locale.forLanguageTag("tr"); // locale tur tr
-        Locale ENGLISH = Locale.forLanguageTag("en");// locale en
+        Locale TURKISH = Locale.forLanguageTag("tr");
+        Locale ENGLISH = Locale.forLanguageTag("en");
  
-        // Converting string s to lowercase letter
-        // using TURKISH and ENGLISH language
-        String gfg2 = s.toLowerCase(TURKISH);// lower case
-        
-        String gfg3 = s.toLowerCase(ENGLISH); // lower case
+        String gfg2 = s.toLowerCase(TURKISH);
+        String gfg3 = s.toLowerCase(ENGLISH);
  
-        // Printing above string
-        System.out.println(gfg2); // code to be exe.
-        
-        System.out.println(gfg3); // 
+        System.out.println(gfg2);
+        System.out.println(gfg3);
     }    
 }
