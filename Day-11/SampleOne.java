@@ -1,5 +1,9 @@
 public class SampleOne {
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        String s = "Java Training";
+
+        char gfg [] = s.toCharArray();
+
+        System.out.println(gfg);
     }
 }
