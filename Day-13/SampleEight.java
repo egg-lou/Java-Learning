@@ -1,8 +1,6 @@
 import java.time.OffsetTime; 
 
 public class SampleEight { // main class
-    
-     
  
   public static void main(String[] args) {  //main methods
       
