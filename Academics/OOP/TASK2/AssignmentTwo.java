@@ -24,15 +24,15 @@ public class AssignmentTwo {
                 String winner = determineWinner(playerOneChoice, playerTwoChoice);
                 System.out.println(winner);
 
-                System.out.print("Do you want to play again? (yes/no): ");
-                playAgain = scanner.nextLine().toLowerCase();
+                System.out.print("Do you want to play again? [Y]Yes or [N]No: ");
+                playAgain = scanner.nextLine().toUpperCase();
 
-                while(!playAgain.equals("yes") && !playAgain.equals("no")) {
-                    System.out.print("Invalid choice. Please enter yes or no: ");
-                    playAgain = scanner.nextLine().toLowerCase();
+                while(!playAgain.equals("Y") && !playAgain.equals("N")) {
+                    System.out.print("Invalid choice. Please enter [Y]Yes or [N]No: ");
+                    playAgain = scanner.nextLine().toUpperCase();
                 }
 
-                if(playAgain.equals("no")) {
+                if(playAgain.equals("N")) {
                     System.out.println("Thanks for playing!");
                     scanner.close();
                 }
@@ -44,7 +44,7 @@ public class AssignmentTwo {
                 System.out.println("An error occurred while reading input: " + e.getMessage());
                 return;
             }
-        } while(playAgain.equals("yes"));
+        } while(playAgain.equals("Y"));
         } 
         
         private static String determineWinner(Choice playerOneChoice, Choice playerTwoChoice) {
