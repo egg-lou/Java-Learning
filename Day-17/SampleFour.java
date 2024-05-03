@@ -38,8 +38,6 @@ class child6 implements thirtyfour {
 }
 
 
-
-
 class child5 implements thirtytwo {
 
     @Override public void print_geek5()
