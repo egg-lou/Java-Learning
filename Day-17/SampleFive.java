@@ -1,3 +1,16 @@
+// Base class
+//class Base {
+public class SampleFive { // main class
+    public static void main(String [] args) { // main methods
+        Sunstar s = new Employee();// ini
+        s.printInfo(); // print info
+    }
+}
+
+interface MoonStar {
+    String getName();
+}
+
 // Abstract class
 abstract class Sunstar { // abs class
     abstract void printInfo(); // printinfo
@@ -15,16 +28,11 @@ class Employee extends Sunstar { // extends
         System.out.println(salary);
 
     }
-
 }
 
-// Base class
-//class Base {
-public class SampleFive { // main class
-
-
-    public static void main(String [] args) { // main methods
-        Sunstar s = new Employee();// ini
-        s.printInfo(); // print info
+// Fixed class declaration
+class Student implements MoonStar { // implements should be lowercase
+    public String getName() {
+        return "John";
     }
 }
